@@ -21,13 +21,14 @@
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.3rem; }
     .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.08); transition: transform 0.2s; }
     .card:hover { transform: translateY(-4px); }
-    .card-img { height: 160px; background: #eef2f7; overflow: hidden; }
+    .card-img { height: 160px; background: #eef2f7; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
     .card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .card-body { padding: 0.9rem 1rem 1.1rem; }
-    .card h3 { font-size: 0.98rem; margin-bottom: 0.3rem; line-height: 1.3; }
-    .card .desc { font-size: 0.82rem; color: #666; margin-bottom: 0.6rem; }
-    .price { font-size: 1.15rem; font-weight: 700; color: #e94560; }
+    .card h3 { font-size: 0.95rem; margin-bottom: 0.3rem; line-height: 1.3; }
+    .card .desc { font-size: 0.8rem; color: #666; margin-bottom: 0.5rem; }
+    .price { font-size: 1.1rem; font-weight: 700; color: #e94560; }
     .price small { font-size: 0.75rem; font-weight: 500; color: #888; }
+    .old-price { font-size: 0.8rem; color: #999; text-decoration: line-through; margin-right: 0.3rem; }
     footer { background: #16213e; color: #bbb; text-align: center; padding: 1.8rem 1rem; margin-top: 2.5rem; font-size: 0.9rem; }
     @media (max-width: 600px) {
       header { flex-direction: column; gap: 0.6rem; }
@@ -51,67 +52,334 @@
 
   <section class="hero">
     <h1>Electrodomésticos en Monte Grande</h1>
-    <p>Más de 35 productos con precios actualizados de Argentina. Entrega en zona sur.</p>
-    <a href="#heladeras" class="btn">Ver catálogo</a>
+    <p>Productos reales con precios de Mercado Libre. Entrega en zona sur.</p>
+    <a href="#tv" class="btn">Ver Smart TVs</a>
   </section>
 
   <main class="container">
 
+    <h2 id="tv">Smart TVs (precios Mercado Libre)</h2>
+    <div class="grid">
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Kanji 32" LED</h3>
+          <p class="desc">KJ-32MT005-2 · Android / Roku</p>
+          <div class="price"><span class="old-price">$299.999</span> $261.899</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Enova 32" HD Google TV</h3>
+          <p class="desc">WiFi · TE32HG11</p>
+          <div class="price"><span class="old-price">$311.999</span> $259.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Noblex 32" Roku HD</h3>
+          <p class="desc">DB32X3010 · LED</p>
+          <div class="price"><span class="old-price">$322.999</span> $264.655</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV TCL 32" Full HD QLED</h3>
+          <p class="desc">32S5K · Google TV</p>
+          <div class="price"><span class="old-price">$699.999</span> $297.721</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Hyundai 32" HD Android</h3>
+          <p class="desc">Android TV · Google Cast</p>
+          <div class="price"><span class="old-price">$459.999</span> $326.161</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Samsung 32" HD</h3>
+          <p class="desc">H5000 · Crystal</p>
+          <div class="price"><span class="old-price">$409.999</span> $329.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Noblex 40" Roku HD</h3>
+          <p class="desc">DB40 · LED Negro</p>
+          <div class="price"><span class="old-price">$399.999</span> $359.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Hisense 40" Full HD</h3>
+          <p class="desc">40A42K · Dolby Audio</p>
+          <div class="price"><span class="old-price">$434.999</span> $369.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Philco 40" Vidaa HD</h3>
+          <p class="desc">PLD40HS24</p>
+          <div class="price"><span class="old-price">$449.999</span> $372.479</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Kanji 43" FHD Google TV</h3>
+          <p class="desc">KJ-43ST05-2 · Whale TV</p>
+          <div class="price"><span class="old-price">$549.999</span> $398.160</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Noblex 43" Roku FHD</h3>
+          <p class="desc">DB43X3110</p>
+          <div class="price"><span class="old-price">$699.999</span> $398.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Noblex 43" Roku</h3>
+          <p class="desc">LED FHD · Dolby</p>
+          <div class="price"><span class="old-price">$599.999</span> $401.815</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Enova 43" Full HD Google</h3>
+          <p class="desc">Google TV</p>
+          <div class="price"><span class="old-price">$465.000</span> $417.098</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Philco 43" Android</h3>
+          <p class="desc">LED FHD</p>
+          <div class="price"><span class="old-price">$674.409</span> $419.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV TCL 43" Full HD QLED</h3>
+          <p class="desc">43S5K · Google TV · Dolby</p>
+          <div class="price"><span class="old-price">$799.999</span> $448.799</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Noblex 43" Google TV</h3>
+          <p class="desc">DV43X7180</p>
+          <div class="price"><span class="old-price">$522.199</span> $469.385</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV LG 43" Full HD AI</h3>
+          <p class="desc">HDR10 Pro</p>
+          <div class="price"><span class="old-price">$550.000</span> $495.899</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Noblex 50" Roku FHD</h3>
+          <p class="desc">DB50X3110 · Tienda Newsan</p>
+          <div class="price"><span class="old-price">$659.999</span> $549.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV BGH 50" 4K Google TV</h3>
+          <p class="desc">B5026UG6G · UHD</p>
+          <div class="price"><span class="old-price">$747.499</span> $581.299</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Philco 55" Vidaa 4K</h3>
+          <p class="desc">PLD55US25VH · LED</p>
+          <div class="price"><span class="old-price">$877.799</span> $631.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Sansei 55" 4K Google TV</h3>
+          <p class="desc">LED 4K</p>
+          <div class="price"><span class="old-price">$1.059.959</span> $634.399</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Noblex 50" 4K Roku</h3>
+          <p class="desc">LED 4K UHD HDR</p>
+          <div class="price"><span class="old-price">$899.999</span> $666.697</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV TCL 55" 4K Google TV</h3>
+          <p class="desc">55V6C-F</p>
+          <div class="price"><span class="old-price">$1.099.999</span> $687.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Samsung 50" UHD 4K</h3>
+          <p class="desc">50U8000F · Crystal UHD</p>
+          <div class="price"><span class="old-price">$1.299.999</span> $725.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Philco 58" Android 4K</h3>
+          <p class="desc">Android TV</p>
+          <div class="price"><span class="old-price">$1.999.999</span> $799.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Samsung 55" Crystal UHD</h3>
+          <p class="desc">U8000F · 4K</p>
+          <div class="price"><span class="old-price">$1.499.999</span> $817.709</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV TCL QLED 55" 4K 120Hz</h3>
+          <p class="desc">55C655A · Google TV</p>
+          <div class="price"><span class="old-price">$1.359.999</span> $816.840</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Philips 55" QLED Ambilight</h3>
+          <p class="desc">55PUD8250/77 · 4K</p>
+          <div class="price"><span class="old-price">$1.093.399</span> $875.669</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Samsung 55" QLED Q6F</h3>
+          <p class="desc">4K · QLED</p>
+          <div class="price"><span class="old-price">$1.099.999</span> $899.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Samsung 65" QLED 4K</h3>
+          <p class="desc">QN65Q6FAAGCZB</p>
+          <div class="price"><span class="old-price">$1.699.999</span> $1.449.999</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV Samsung 75" Crystal UHD</h3>
+          <p class="desc">75U8000F · 4K HDR</p>
+          <div class="price"><span class="old-price">$2.899.999</span> $2.094.292</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV TCL QLED 75" 4K</h3>
+          <p class="desc">75P8K-F · Google TV</p>
+          <div class="price">$2.219.195</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">📺</div>
+        <div class="card-body">
+          <h3>Smart TV LG 65" OLED C3</h3>
+          <p class="desc">OLED65C3PSA · ThinQ · 4K</p>
+          <div class="price"><span class="old-price">$3.835.000</span> $3.451.500</div>
+        </div>
+      </article>
+
+    </div>
+
     <h2 id="heladeras">Heladeras y Freezers</h2>
     <div class="grid">
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=400&h=300&fit=crop" alt="Heladera"></div><div class="card-body"><h3>Heladera Philco No Frost 300L</h3><p class="desc">Inverter, freezer superior, eficiencia A+</p><div class="price">$899.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=300&fit=crop" alt="Heladera"></div><div class="card-body"><h3>Heladera Drean 320L No Frost</h3><p class="desc">Inox, motor inverter, 320 litros</p><div class="price">$872.399 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=400&h=300&fit=crop" alt="Heladera"></div><div class="card-body"><h3>Heladera Hisense 466L No Frost</h3><p class="desc">Dispenser de agua, inverter</p><div class="price">$1.334.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=300&fit=crop" alt="Heladera"></div><div class="card-body"><h3>Heladera Samsung 328L Inverter</h3><p class="desc">No Frost, digital inverter, plateada</p><div class="price">$1.149.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=400&h=300&fit=crop" alt="Heladera"></div><div class="card-body"><h3>Heladera Midea 300L Combi</h3><p class="desc">No Frost inverter, inox</p><div class="price">$789.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=300&fit=crop" alt="Freezer"></div><div class="card-body"><h3>Freezer Horizontal Briket 245L</h3><p class="desc">Tapa de vidrio, gran capacidad</p><div class="price">$1.485.959 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=400&h=300&fit=crop" alt="Heladera"></div><div class="card-body"><h3>Heladera Philco One Door 161L</h3><p class="desc">Cíclica con dispenser, compacta</p><div class="price">$422.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=300&fit=crop" alt="Heladera"></div><div class="card-body"><h3>Heladera Gafa 356L No Frost</h3><p class="desc">Inverter, plata, buena relación precio</p><div class="price">$749.999 <small>ARS</small></div></div></article>
+      <article class="card"><div class="card-img">❄️</div><div class="card-body"><h3>Heladera Philco No Frost 300L</h3><p class="desc">Inverter, freezer superior</p><div class="price">$899.999</div></div></article>
+      <article class="card"><div class="card-img">❄️</div><div class="card-body"><h3>Heladera Drean 320L No Frost</h3><p class="desc">Inox, motor inverter</p><div class="price">$872.399</div></div></article>
+      <article class="card"><div class="card-img">❄️</div><div class="card-body"><h3>Heladera Hisense 466L No Frost</h3><p class="desc">Dispenser de agua</p><div class="price">$1.334.999</div></div></article>
+      <article class="card"><div class="card-img">❄️</div><div class="card-body"><h3>Heladera Samsung 328L Inverter</h3><p class="desc">No Frost digital</p><div class="price">$1.149.999</div></div></article>
     </div>
 
     <h2 id="lavarropas">Lavarropas</h2>
     <div class="grid">
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1626806787461-74be3f3c14d8?w=400&h=300&fit=crop" alt="Lavarropas"></div><div class="card-body"><h3>Lavarropas Electrolux 7kg Inverter</h3><p class="desc">Carga frontal, 5 estrellas</p><div class="price">$699.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1626806787461-74be3f3c14d8?w=400&h=300&fit=crop" alt="Lavarropas"></div><div class="card-body"><h3>Lavarropas Drean 6kg Inverter</h3><p class="desc">Carga frontal, 13 programas</p><div class="price">$649.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1626806787461-74be3f3c14d8?w=400&h=300&fit=crop" alt="Lavarropas"></div><div class="card-body"><h3>Lavarropas Philco 6,5kg Predicta</h3><p class="desc">Carga frontal, buena eficiencia</p><div class="price">$559.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1626806787461-74be3f3c14d8?w=400&h=300&fit=crop" alt="Lavarropas"></div><div class="card-body"><h3>Lavarropas BGH 9kg Inverter</h3><p class="desc">1400 RPM, función vapor, negro</p><div class="price">$999.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1626806787461-74be3f3c14d8?w=400&h=300&fit=crop" alt="Lavarropas"></div><div class="card-body"><h3>Lavarropas TCL 6kg Inverter</h3><p class="desc">1200 RPM, silencioso</p><div class="price">$579.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1626806787461-74be3f3c14d8?w=400&h=300&fit=crop" alt="Lavarropas"></div><div class="card-body"><h3>Lavarropas Whirlpool 7kg Inverter</h3><p class="desc">Carga frontal, blanco</p><div class="price">$729.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1626806787461-74be3f3c14d8?w=400&h=300&fit=crop" alt="Lavarropas"></div><div class="card-body"><h3>Lavarropas Codini Steam 6kg</h3><p class="desc">Inverter + vapor, 1000 RPM</p><div class="price">$899.999 <small>ARS</small></div></div></article>
-    </div>
-
-    <h2 id="tv">Smart TVs</h2>
-    <div class="grid">
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Smart TV"></div><div class="card-body"><h3>Smart TV TCL 55" QLED 4K</h3><p class="desc">120Hz, Google TV, HDR</p><div class="price">$816.841 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Smart TV"></div><div class="card-body"><h3>Smart TV Samsung 55" 4K</h3><p class="desc">Crystal UHD, Tizen, HDR</p><div class="price">$949.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Smart TV"></div><div class="card-body"><h3>Smart TV LG 50" 4K</h3><p class="desc">webOS, AI ThinQ, HDR10</p><div class="price">$799.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Smart TV"></div><div class="card-body"><h3>Smart TV Noblex 43" Full HD</h3><p class="desc">Android TV, Wi-Fi, buena relación</p><div class="price">$449.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Smart TV"></div><div class="card-body"><h3>Smart TV Hisense 65" 4K</h3><p class="desc">UHD, Dolby Vision, grande</p><div class="price">$1.299.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Smart TV"></div><div class="card-body"><h3>Smart TV Philips 55" 4K</h3><p class="desc">Ambilight, Android TV</p><div class="price">$889.999 <small>ARS</small></div></div></article>
+      <article class="card"><div class="card-img">🌀</div><div class="card-body"><h3>Lavarropas Electrolux 7kg Inverter</h3><p class="desc">Carga frontal</p><div class="price">$699.999</div></div></article>
+      <article class="card"><div class="card-img">🌀</div><div class="card-body"><h3>Lavarropas Drean 6kg Inverter</h3><p class="desc">13 programas</p><div class="price">$649.999</div></div></article>
+      <article class="card"><div class="card-img">🌀</div><div class="card-body"><h3>Lavarropas Philco 6,5kg</h3><p class="desc">Carga frontal</p><div class="price">$559.999</div></div></article>
     </div>
 
     <h2 id="aires">Aires Acondicionados</h2>
     <div class="grid">
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1631545806609-5c0c0c0c0c0c?w=400&h=300&fit=crop" alt="Aire" onerror="this.src='https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop'"></div><div class="card-body"><h3>Split BGH Inverter 4730F</h3><p class="desc">Frío/calor, alta potencia</p><div class="price">$1.199.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop" alt="Aire"></div><div class="card-body"><h3>Split Hitachi 3200W Inverter</h3><p class="desc">Frío/calor, eficiente</p><div class="price">$699.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop" alt="Aire"></div><div class="card-body"><h3>Split Philco 3750W Inverter</h3><p class="desc">Frío/calor, Wi-Fi</p><div class="price">$779.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop" alt="Aire"></div><div class="card-body"><h3>Split BGH 3100 frigorías</h3><p class="desc">Frío/calor, buena relación</p><div class="price">$719.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop" alt="Aire"></div><div class="card-body"><h3>Split Midea 2900F Inverter</h3><p class="desc">Frío/calor, silencioso</p><div class="price">$639.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop" alt="Aire"></div><div class="card-body"><h3>Split Sansei 2365 frigorías</h3><p class="desc">Económico, para ambientes chicos</p><div class="price">$499.999 <small>ARS</small></div></div></article>
-    </div>
-
-    <h2 id="cocina">Cocina y Pequeños Electrodomésticos</h2>
-    <div class="grid">
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop" alt="Cocina"></div><div class="card-body"><h3>Cocina Philco Multigas 55cm</h3><p class="desc">4 hornallas, horno, inox</p><div class="price">$449.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=300&fit=crop" alt="Cocina"></div><div class="card-body"><h3>Cocina Peabody Multigas 50cm</h3><p class="desc">Negra, buena relación precio</p><div class="price">$329.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=400&h=300&fit=crop" alt="Microondas"></div><div class="card-body"><h3>Microondas Electrolux 25L</h3><p class="desc">Digital, plateado</p><div class="price">$189.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400&h=300&fit=crop" alt="Freidora"></div><div class="card-body"><h3>Freidora de Aire Kanji 6,5L</h3><p class="desc">Digital, sin aceite</p><div class="price">$85.199 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400&h=300&fit=crop" alt="Freidora"></div><div class="card-body"><h3>Freidora de Aire Atma 6,5L</h3><p class="desc">Mecánica, económica</p><div class="price">$69.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=400&h=300&fit=crop" alt="Aspiradora"></div><div class="card-body"><h3>Aspiradora Robot Xiaomi S40</h3><p class="desc">5000 Pa, mapeo láser</p><div class="price">$369.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=400&h=300&fit=crop" alt="Aspiradora"></div><div class="card-body"><h3>Aspiradora Stick Philco 2en1</h3><p class="desc">Vertical, inalámbrica</p><div class="price">$49.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=400&h=300&fit=crop" alt="Aspiradora"></div><div class="card-body"><h3>Aspiradora Robot Midea I5C</h3><p class="desc">Giroscópica + trapeadora</p><div class="price">$529.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=400&h=300&fit=crop" alt="Pava"></div><div class="card-body"><h3>Pava Eléctrica Atma 1.7L</h3><p class="desc">Selector de temperatura</p><div class="price">$52.999 <small>ARS</small></div></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=400&h=300&fit=crop" alt="Tostadora"></div><div class="card-body"><h3>Tostadora Philco</h3><p class="desc">2 ranuras, negra</p><div class="price">$25.999 <small>ARS</small></div></div></article>
+      <article class="card"><div class="card-img">💨</div><div class="card-body"><h3>Split BGH Inverter 4730F</h3><p class="desc">Frío/calor</p><div class="price">$1.199.999</div></div></article>
+      <article class="card"><div class="card-img">💨</div><div class="card-body"><h3>Split Hitachi 3200W</h3><p class="desc">Inverter frío/calor</p><div class="price">$699.999</div></div></article>
+      <article class="card"><div class="card-img">💨</div><div class="card-body"><h3>Split Philco 3750W</h3><p class="desc">Inverter Wi-Fi</p><div class="price">$779.999</div></div></article>
     </div>
 
   </main>
@@ -119,7 +387,7 @@
   <footer id="contacto">
     <p><strong>Electrónica Monte Grande</strong></p>
     <p>Monte Grande, Buenos Aires · WhatsApp: 11-XXXX-XXXX</p>
-    <p style="margin-top:0.5rem">Precios orientativos agosto 2026 · Fotos Unsplash · © 2026 Electrónica MG</p>
+    <p style="margin-top:0.5rem">Precios tomados de Mercado Libre · Agosto 2026 · © Electrónica MG</p>
   </footer>
 </body>
 </html>
