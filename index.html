@@ -21,13 +21,13 @@
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.3rem; }
     .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.08); transition: transform 0.2s; }
     .card:hover { transform: translateY(-4px); }
-    .card-img { height: 140px; background: #eef2f7; display: flex; align-items: center; justify-content: center; font-size: 3.2rem; }
+    .card-img { height: 150px; background: #eef2f7; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .card-img img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
     .card-body { padding: 0.9rem 1rem 1.1rem; }
     .card h3 { font-size: 0.95rem; margin-bottom: 0.25rem; line-height: 1.3; }
     .card .desc { font-size: 0.78rem; color: #666; margin-bottom: 0.45rem; }
     .price { font-size: 1.1rem; font-weight: 700; color: #e94560; }
     .old-price { font-size: 0.8rem; color: #999; text-decoration: line-through; margin-right: 0.3rem; }
-    .badge { display: inline-block; background: #e94560; color: white; font-size: 0.7rem; padding: 0.15rem 0.4rem; border-radius: 4px; margin-bottom: 0.3rem; }
     footer { background: #16213e; color: #bbb; text-align: center; padding: 1.8rem 1rem; margin-top: 2.5rem; font-size: 0.9rem; }
     @media (max-width: 600px) {
       header { flex-direction: column; gap: 0.6rem; }
@@ -59,9 +59,8 @@
     <h2 id="tv">Smart TVs</h2>
     <div class="grid">
 
-      <!-- 32" -->
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_779890-MLA74812345678_032024-F.webp" alt="Noblex 32 Roku" onerror="this.src='https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop'"></div>
         <div class="card-body">
           <h3>Noblex 32" Roku HD</h3>
           <p class="desc">DB32X3010 · Roku TV</p>
@@ -70,7 +69,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="TV 32"></div>
         <div class="card-body">
           <h3>Enova 32" Google TV</h3>
           <p class="desc">TE32HG11 · HD</p>
@@ -79,7 +78,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="TV"></div>
         <div class="card-body">
           <h3>Kanji 32" LED</h3>
           <p class="desc">KJ-32MT005-2</p>
@@ -88,7 +87,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="TCL"></div>
         <div class="card-body">
           <h3>TCL 32" QLED</h3>
           <p class="desc">32S5K · Google TV</p>
@@ -97,7 +96,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="TV"></div>
         <div class="card-body">
           <h3>Hyundai 32" Android</h3>
           <p class="desc">HD · Google Cast</p>
@@ -106,7 +105,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Samsung 32"></div>
         <div class="card-body">
           <h3>Samsung 32" H5000</h3>
           <p class="desc">HD · Crystal</p>
@@ -114,9 +113,8 @@
         </div>
       </article>
 
-      <!-- 40" -->
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Hisense 40"></div>
         <div class="card-body">
           <h3>Hisense 40" Full HD</h3>
           <p class="desc">40A42K · Dolby</p>
@@ -125,7 +123,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Noblex 40"></div>
         <div class="card-body">
           <h3>Noblex 40" Roku</h3>
           <p class="desc">DB40 · HD</p>
@@ -134,7 +132,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Philco 40"></div>
         <div class="card-body">
           <h3>Philco 40" Vidaa</h3>
           <p class="desc">PLD40HS24 · HD</p>
@@ -142,9 +140,8 @@
         </div>
       </article>
 
-      <!-- 43" -->
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Noblex 43"></div>
         <div class="card-body">
           <h3>Noblex 43" Roku FHD</h3>
           <p class="desc">DB43X3110</p>
@@ -153,7 +150,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Kanji 43"></div>
         <div class="card-body">
           <h3>Kanji 43" Google TV</h3>
           <p class="desc">KJ-43ST05-2 · FHD</p>
@@ -162,7 +159,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="TCL 43"></div>
         <div class="card-body">
           <h3>TCL 43" QLED</h3>
           <p class="desc">43S5K · Google TV</p>
@@ -171,7 +168,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Noblex Google"></div>
         <div class="card-body">
           <h3>Noblex 43" Google TV</h3>
           <p class="desc">DV43X7180 · FHD</p>
@@ -180,7 +177,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Enova 43"></div>
         <div class="card-body">
           <h3>Enova 43" Google TV</h3>
           <p class="desc">Full HD</p>
@@ -189,7 +186,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="LG 43"></div>
         <div class="card-body">
           <h3>LG 43" Full HD AI</h3>
           <p class="desc">HDR10 Pro</p>
@@ -197,9 +194,8 @@
         </div>
       </article>
 
-      <!-- 50" -->
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Noblex 50 4K"></div>
         <div class="card-body">
           <h3>Noblex 50" Roku 4K</h3>
           <p class="desc">LED 4K UHD HDR</p>
@@ -208,7 +204,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Noblex 50"></div>
         <div class="card-body">
           <h3>Noblex 50" Roku FHD</h3>
           <p class="desc">DB50X3110</p>
@@ -217,7 +213,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="BGH 50"></div>
         <div class="card-body">
           <h3>BGH 50" 4K Google TV</h3>
           <p class="desc">B5026UG6G</p>
@@ -226,7 +222,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Samsung 50"></div>
         <div class="card-body">
           <h3>Samsung 50" Crystal UHD</h3>
           <p class="desc">50U8000F · 4K</p>
@@ -234,9 +230,8 @@
         </div>
       </article>
 
-      <!-- 55" -->
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Samsung 55 Crystal"></div>
         <div class="card-body">
           <h3>Samsung 55" Crystal UHD</h3>
           <p class="desc">U8000F · 4K</p>
@@ -245,7 +240,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Philco 55"></div>
         <div class="card-body">
           <h3>Philco 55" Vidaa 4K</h3>
           <p class="desc">PLD55US25VH</p>
@@ -254,7 +249,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Sansei 55"></div>
         <div class="card-body">
           <h3>Sansei 55" 4K Google TV</h3>
           <p class="desc">LED 4K</p>
@@ -263,7 +258,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="TCL 55"></div>
         <div class="card-body">
           <h3>TCL 55" 4K Google TV</h3>
           <p class="desc">55V6C-F</p>
@@ -272,7 +267,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="TCL QLED 55"></div>
         <div class="card-body">
           <h3>TCL QLED 55" 120Hz</h3>
           <p class="desc">55C655A · Google TV</p>
@@ -281,7 +276,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Philips Ambilight"></div>
         <div class="card-body">
           <h3>Philips 55" QLED Ambilight</h3>
           <p class="desc">55PUD8250/77</p>
@@ -290,7 +285,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Samsung QLED"></div>
         <div class="card-body">
           <h3>Samsung 55" QLED Q6F</h3>
           <p class="desc">4K QLED</p>
@@ -298,9 +293,8 @@
         </div>
       </article>
 
-      <!-- 58-65-75 -->
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Philco 58"></div>
         <div class="card-body">
           <h3>Philco 58" Android 4K</h3>
           <p class="desc">Android TV</p>
@@ -309,7 +303,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Samsung 65"></div>
         <div class="card-body">
           <h3>Samsung 65" QLED</h3>
           <p class="desc">QN65Q6FAAGCZB</p>
@@ -318,7 +312,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="LG OLED"></div>
         <div class="card-body">
           <h3>LG 65" OLED C3</h3>
           <p class="desc">OLED65C3PSA · ThinQ</p>
@@ -327,7 +321,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Samsung 75"></div>
         <div class="card-body">
           <h3>Samsung 75" Crystal UHD</h3>
           <p class="desc">75U8000F · 4K</p>
@@ -336,7 +330,7 @@
       </article>
 
       <article class="card">
-        <div class="card-img">📺</div>
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="TCL 75 QLED"></div>
         <div class="card-body">
           <h3>TCL QLED 75" 75P8K-F</h3>
           <p class="desc">Google TV · 4K QLED</p>
