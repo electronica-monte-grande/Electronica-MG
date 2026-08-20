@@ -19,15 +19,16 @@
     .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.2rem; }
     h2 { font-size: 1.5rem; color: #0f3460; margin: 2.2rem 0 1.2rem; border-left: 4px solid #e94560; padding-left: 0.7rem; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.3rem; }
-    .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.08); transition: transform 0.2s; }
-    .card:hover { transform: translateY(-4px); }
-    .card-img { height: 150px; background: #eef2f7; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-    .card-img img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+    a.card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; color: inherit; display: block; }
+    a.card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+    .card-img { height: 155px; background: #f5f7fa; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .card-img img { width: 100%; height: 100%; object-fit: contain; }
     .card-body { padding: 0.9rem 1rem 1.1rem; }
-    .card h3 { font-size: 0.95rem; margin-bottom: 0.25rem; line-height: 1.3; }
+    .card h3 { font-size: 0.95rem; margin-bottom: 0.25rem; line-height: 1.3; color: #1a1a2e; }
     .card .desc { font-size: 0.78rem; color: #666; margin-bottom: 0.45rem; }
-    .price { font-size: 1.1rem; font-weight: 700; color: #e94560; }
+    .price { font-size: 1.15rem; font-weight: 700; color: #e94560; }
     .old-price { font-size: 0.8rem; color: #999; text-decoration: line-through; margin-right: 0.3rem; }
+    .cta { font-size: 0.75rem; color: #0f3460; margin-top: 0.4rem; font-weight: 600; }
     footer { background: #16213e; color: #bbb; text-align: center; padding: 1.8rem 1rem; margin-top: 2.5rem; font-size: 0.9rem; }
     @media (max-width: 600px) {
       header { flex-direction: column; gap: 0.6rem; }
@@ -50,7 +51,7 @@
 
   <section class="hero">
     <h1>Electrodomésticos en Monte Grande</h1>
-    <p>Precios actualizados de Mercado Libre · Entrega zona sur</p>
+    <p>Precios de Mercado Libre · Consultá por WhatsApp</p>
     <a href="#tv" class="btn">Ver Smart TVs</a>
   </section>
 
@@ -59,314 +60,161 @@
     <h2 id="tv">Smart TVs</h2>
     <div class="grid">
 
-      <article class="card">
-        <div class="card-img"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_779890-MLA74812345678_032024-F.webp" alt="Noblex 32 Roku" onerror="this.src='https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop'"></div>
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Noblex%2032%20Roku%20HD%20a%20$264.655" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=350&fit=crop&q=80" alt="Noblex 32"></div>
         <div class="card-body">
           <h3>Noblex 32" Roku HD</h3>
           <p class="desc">DB32X3010 · Roku TV</p>
           <div class="price"><span class="old-price">$322.999</span> $264.655</div>
+          <div class="cta">Consultar →</div>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="TV 32"></div>
-        <div class="card-body">
-          <h3>Enova 32" Google TV</h3>
-          <p class="desc">TE32HG11 · HD</p>
-          <div class="price"><span class="old-price">$311.999</span> $259.999</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="TV"></div>
-        <div class="card-body">
-          <h3>Kanji 32" LED</h3>
-          <p class="desc">KJ-32MT005-2</p>
-          <div class="price"><span class="old-price">$299.999</span> $261.899</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="TCL"></div>
-        <div class="card-body">
-          <h3>TCL 32" QLED</h3>
-          <p class="desc">32S5K · Google TV</p>
-          <div class="price"><span class="old-price">$699.999</span> $297.721</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="TV"></div>
-        <div class="card-body">
-          <h3>Hyundai 32" Android</h3>
-          <p class="desc">HD · Google Cast</p>
-          <div class="price"><span class="old-price">$459.999</span> $326.161</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Samsung 32"></div>
-        <div class="card-body">
-          <h3>Samsung 32" H5000</h3>
-          <p class="desc">HD · Crystal</p>
-          <div class="price"><span class="old-price">$409.999</span> $329.999</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Hisense 40"></div>
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Hisense%2040A42K%20a%20$369.999" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=500&h=350&fit=crop&q=80" alt="Hisense 40"></div>
         <div class="card-body">
           <h3>Hisense 40" Full HD</h3>
-          <p class="desc">40A42K · Dolby</p>
+          <p class="desc">40A42K · Dolby Audio</p>
           <div class="price"><span class="old-price">$434.999</span> $369.999</div>
+          <div class="cta">Consultar →</div>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Noblex 40"></div>
-        <div class="card-body">
-          <h3>Noblex 40" Roku</h3>
-          <p class="desc">DB40 · HD</p>
-          <div class="price"><span class="old-price">$399.999</span> $359.999</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Philco 40"></div>
-        <div class="card-body">
-          <h3>Philco 40" Vidaa</h3>
-          <p class="desc">PLD40HS24 · HD</p>
-          <div class="price"><span class="old-price">$449.999</span> $372.479</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Noblex 43"></div>
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Noblex%2043%20Roku%20a%20$401.815" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=350&fit=crop&q=70" alt="Noblex 43"></div>
         <div class="card-body">
           <h3>Noblex 43" Roku FHD</h3>
           <p class="desc">DB43X3110</p>
           <div class="price"><span class="old-price">$699.999</span> $401.815</div>
+          <div class="cta">Consultar →</div>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Kanji 43"></div>
-        <div class="card-body">
-          <h3>Kanji 43" Google TV</h3>
-          <p class="desc">KJ-43ST05-2 · FHD</p>
-          <div class="price"><span class="old-price">$549.999</span> $398.160</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="TCL 43"></div>
-        <div class="card-body">
-          <h3>TCL 43" QLED</h3>
-          <p class="desc">43S5K · Google TV</p>
-          <div class="price"><span class="old-price">$799.999</span> $448.799</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Noblex Google"></div>
-        <div class="card-body">
-          <h3>Noblex 43" Google TV</h3>
-          <p class="desc">DV43X7180 · FHD</p>
-          <div class="price"><span class="old-price">$522.199</span> $469.385</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Enova 43"></div>
-        <div class="card-body">
-          <h3>Enova 43" Google TV</h3>
-          <p class="desc">Full HD</p>
-          <div class="price"><span class="old-price">$465.000</span> $417.098</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="LG 43"></div>
-        <div class="card-body">
-          <h3>LG 43" Full HD AI</h3>
-          <p class="desc">HDR10 Pro</p>
-          <div class="price"><span class="old-price">$550.000</span> $495.899</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Noblex 50 4K"></div>
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Noblex%2050%204K%20a%20$666.697" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=350&fit=crop&q=60" alt="Noblex 50 4K"></div>
         <div class="card-body">
           <h3>Noblex 50" Roku 4K</h3>
           <p class="desc">LED 4K UHD HDR</p>
           <div class="price"><span class="old-price">$899.999</span> $666.697</div>
+          <div class="cta">Consultar →</div>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Noblex 50"></div>
-        <div class="card-body">
-          <h3>Noblex 50" Roku FHD</h3>
-          <p class="desc">DB50X3110</p>
-          <div class="price"><span class="old-price">$659.999</span> $549.999</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="BGH 50"></div>
-        <div class="card-body">
-          <h3>BGH 50" 4K Google TV</h3>
-          <p class="desc">B5026UG6G</p>
-          <div class="price"><span class="old-price">$747.499</span> $581.299</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Samsung 50"></div>
-        <div class="card-body">
-          <h3>Samsung 50" Crystal UHD</h3>
-          <p class="desc">50U8000F · 4K</p>
-          <div class="price"><span class="old-price">$1.299.999</span> $725.999</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Samsung 55 Crystal"></div>
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Samsung%2055%20Crystal%20UHD%20a%20$817.709" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=500&h=350&fit=crop&q=90" alt="Samsung 55 Crystal"></div>
         <div class="card-body">
           <h3>Samsung 55" Crystal UHD</h3>
           <p class="desc">U8000F · 4K</p>
           <div class="price"><span class="old-price">$1.499.999</span> $817.709</div>
+          <div class="cta">Consultar →</div>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Philco 55"></div>
-        <div class="card-body">
-          <h3>Philco 55" Vidaa 4K</h3>
-          <p class="desc">PLD55US25VH</p>
-          <div class="price"><span class="old-price">$877.799</span> $631.999</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Sansei 55"></div>
-        <div class="card-body">
-          <h3>Sansei 55" 4K Google TV</h3>
-          <p class="desc">LED 4K</p>
-          <div class="price"><span class="old-price">$1.059.959</span> $634.399</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="TCL 55"></div>
-        <div class="card-body">
-          <h3>TCL 55" 4K Google TV</h3>
-          <p class="desc">55V6C-F</p>
-          <div class="price"><span class="old-price">$1.099.999</span> $687.999</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="TCL QLED 55"></div>
-        <div class="card-body">
-          <h3>TCL QLED 55" 120Hz</h3>
-          <p class="desc">55C655A · Google TV</p>
-          <div class="price"><span class="old-price">$1.359.999</span> $816.840</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Philips Ambilight"></div>
-        <div class="card-body">
-          <h3>Philips 55" QLED Ambilight</h3>
-          <p class="desc">55PUD8250/77</p>
-          <div class="price"><span class="old-price">$1.093.399</span> $875.669</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Samsung QLED"></div>
-        <div class="card-body">
-          <h3>Samsung 55" QLED Q6F</h3>
-          <p class="desc">4K QLED</p>
-          <div class="price"><span class="old-price">$1.099.999</span> $899.999</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="Philco 58"></div>
-        <div class="card-body">
-          <h3>Philco 58" Android 4K</h3>
-          <p class="desc">Android TV</p>
-          <div class="price"><span class="old-price">$1.999.999</span> $799.999</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Samsung 65"></div>
-        <div class="card-body">
-          <h3>Samsung 65" QLED</h3>
-          <p class="desc">QN65Q6FAAGCZB</p>
-          <div class="price"><span class="old-price">$1.699.999</span> $1.449.999</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop" alt="LG OLED"></div>
-        <div class="card-body">
-          <h3>LG 65" OLED C3</h3>
-          <p class="desc">OLED65C3PSA · ThinQ</p>
-          <div class="price"><span class="old-price">$3.835.000</span> $3.451.500</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="Samsung 75"></div>
-        <div class="card-body">
-          <h3>Samsung 75" Crystal UHD</h3>
-          <p class="desc">75U8000F · 4K</p>
-          <div class="price"><span class="old-price">$2.899.999</span> $2.094.292</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=300&fit=crop" alt="TCL 75 QLED"></div>
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20TCL%2075%20QLED%20a%20$2.219.195" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500&h=350&fit=crop" alt="TCL 75 QLED"></div>
         <div class="card-body">
           <h3>TCL QLED 75" 75P8K-F</h3>
           <p class="desc">Google TV · 4K QLED</p>
           <div class="price">$2.219.195</div>
+          <div class="cta">Consultar →</div>
         </div>
-      </article>
+      </a>
+
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20LG%2065%20OLED%20C3%20a%20$3.451.500" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500&h=350&fit=crop&q=80" alt="LG OLED"></div>
+        <div class="card-body">
+          <h3>LG 65" OLED C3</h3>
+          <p class="desc">OLED65C3PSA · ThinQ</p>
+          <div class="price"><span class="old-price">$3.835.000</span> $3.451.500</div>
+          <div class="cta">Consultar →</div>
+        </div>
+      </a>
+
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Philips%2055%20Ambilight%20a%20$875.669" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=500&h=350&fit=crop&q=70" alt="Philips Ambilight"></div>
+        <div class="card-body">
+          <h3>Philips 55" QLED Ambilight</h3>
+          <p class="desc">55PUD8250/77</p>
+          <div class="price"><span class="old-price">$1.093.399</span> $875.669</div>
+          <div class="cta">Consultar →</div>
+        </div>
+      </a>
+
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20TCL%2055%20QLED%20a%20$816.840" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500&h=350&fit=crop&q=60" alt="TCL QLED 55"></div>
+        <div class="card-body">
+          <h3>TCL QLED 55" 120Hz</h3>
+          <p class="desc">55C655A · Google TV</p>
+          <div class="price"><span class="old-price">$1.359.999</span> $816.840</div>
+          <div class="cta">Consultar →</div>
+        </div>
+      </a>
+
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Samsung%2065%20QLED%20a%20$1.449.999" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=500&h=350&fit=crop&q=85" alt="Samsung 65 QLED"></div>
+        <div class="card-body">
+          <h3>Samsung 65" QLED</h3>
+          <p class="desc">QN65Q6FAAGCZB</p>
+          <div class="price"><span class="old-price">$1.699.999</span> $1.449.999</div>
+          <div class="cta">Consultar →</div>
+        </div>
+      </a>
+
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Philco%2055%204K%20a%20$631.999" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=350&fit=crop&q=50" alt="Philco 55"></div>
+        <div class="card-body">
+          <h3>Philco 55" Vidaa 4K</h3>
+          <p class="desc">PLD55US25VH</p>
+          <div class="price"><span class="old-price">$877.799</span> $631.999</div>
+          <div class="cta">Consultar →</div>
+        </div>
+      </a>
+
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Samsung%2075%20Crystal%20a%20$2.094.292" target="_blank">
+        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=500&h=350&fit=crop&q=75" alt="Samsung 75"></div>
+        <div class="card-body">
+          <h3>Samsung 75" Crystal UHD</h3>
+          <p class="desc">75U8000F · 4K</p>
+          <div class="price"><span class="old-price">$2.899.999</span> $2.094.292</div>
+          <div class="cta">Consultar →</div>
+        </div>
+      </a>
 
     </div>
 
     <h2 id="heladeras">Heladeras</h2>
     <div class="grid">
-      <article class="card"><div class="card-img">❄️</div><div class="card-body"><h3>Philco No Frost 300L</h3><p class="desc">Inverter</p><div class="price">$899.999</div></div></article>
-      <article class="card"><div class="card-img">❄️</div><div class="card-body"><h3>Drean 320L No Frost</h3><p class="desc">Inox · Inverter</p><div class="price">$872.399</div></div></article>
-      <article class="card"><div class="card-img">❄️</div><div class="card-body"><h3>Hisense 466L</h3><p class="desc">Dispenser</p><div class="price">$1.334.999</div></div></article>
-      <article class="card"><div class="card-img">❄️</div><div class="card-body"><h3>Samsung 328L Inverter</h3><p class="desc">No Frost</p><div class="price">$1.149.999</div></div></article>
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20la%20Heladera%20Philco%20300L" target="_blank">
+        <div class="card-img" style="font-size:3rem;background:#e8f4fc">❄️</div>
+        <div class="card-body"><h3>Philco No Frost 300L</h3><p class="desc">Inverter</p><div class="price">$899.999</div><div class="cta">Consultar →</div></div>
+      </a>
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20la%20Heladera%20Drean%20320L" target="_blank">
+        <div class="card-img" style="font-size:3rem;background:#e8f4fc">❄️</div>
+        <div class="card-body"><h3>Drean 320L No Frost</h3><p class="desc">Inox · Inverter</p><div class="price">$872.399</div><div class="cta">Consultar →</div></div>
+      </a>
     </div>
 
     <h2 id="lavarropas">Lavarropas</h2>
     <div class="grid">
-      <article class="card"><div class="card-img">🌀</div><div class="card-body"><h3>Electrolux 7kg Inverter</h3><p class="desc">Carga frontal</p><div class="price">$699.999</div></div></article>
-      <article class="card"><div class="card-img">🌀</div><div class="card-body"><h3>Drean 6kg Inverter</h3><p class="desc">13 programas</p><div class="price">$649.999</div></div></article>
-      <article class="card"><div class="card-img">🌀</div><div class="card-body"><h3>Philco 6,5kg</h3><p class="desc">Carga frontal</p><div class="price">$559.999</div></div></article>
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Lavarropas%20Electrolux%207kg" target="_blank">
+        <div class="card-img" style="font-size:3rem;background:#f0f0f0">🌀</div>
+        <div class="card-body"><h3>Electrolux 7kg Inverter</h3><p class="desc">Carga frontal</p><div class="price">$699.999</div><div class="cta">Consultar →</div></div>
+      </a>
     </div>
 
     <h2 id="aires">Aires Acondicionados</h2>
     <div class="grid">
-      <article class="card"><div class="card-img">💨</div><div class="card-body"><h3>BGH Inverter 4730F</h3><p class="desc">Frío/calor</p><div class="price">$1.199.999</div></div></article>
-      <article class="card"><div class="card-img">💨</div><div class="card-body"><h3>Hitachi 3200W</h3><p class="desc">Inverter</p><div class="price">$699.999</div></div></article>
-      <article class="card"><div class="card-img">💨</div><div class="card-body"><h3>Philco 3750W</h3><p class="desc">Inverter Wi-Fi</p><div class="price">$779.999</div></div></article>
+      <a class="card" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Me%20interesa%20el%20Aire%20BGH%204730F" target="_blank">
+        <div class="card-img" style="font-size:3rem;background:#e8f8f0">💨</div>
+        <div class="card-body"><h3>BGH Inverter 4730F</h3><p class="desc">Frío/calor</p><div class="price">$1.199.999</div><div class="cta">Consultar →</div></div>
+      </a>
     </div>
 
   </main>
 
   <footer id="contacto">
     <p><strong>Electrónica Monte Grande</strong></p>
-    <p>Monte Grande, Buenos Aires · WhatsApp: 11-XXXX-XXXX</p>
+    <p>Monte Grande, Buenos Aires</p>
     <p style="margin-top:0.5rem">Precios Mercado Libre · Agosto 2026 · © Electrónica MG</p>
   </footer>
 </body>
