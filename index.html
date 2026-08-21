@@ -2,41 +2,29 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Electrónica Monte Grande | Electrodomésticos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electrónica Monte Grande</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f0f2f5; color: #1a1a2e; line-height: 1.5; }
-    header { background: linear-gradient(135deg, #0f3460, #16213e); color: white; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
-    .logo { font-size: 1.4rem; font-weight: 700; }
-    .logo span { color: #e94560; }
-    nav a { color: #ddd; text-decoration: none; margin-left: 1rem; font-size: 0.9rem; }
-    nav a:hover { color: #e94560; }
-    .hero { background: linear-gradient(rgba(15,52,96,0.88), rgba(22,33,62,0.92)), url('https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1400') center/cover; color: white; text-align: center; padding: 3.2rem 1.2rem; }
-    .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    .hero p { opacity: 0.9; max-width: 520px; margin: 0 auto 1.2rem; }
-    .btn { display: inline-block; background: #e94560; color: white; padding: 0.7rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.2rem; }
-    h2 { font-size: 1.4rem; color: #0f3460; margin: 2rem 0 1rem; border-left: 4px solid #e94560; padding-left: 0.7rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 1.2rem; }
-    a.card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.08); transition: transform 0.2s; text-decoration: none; color: inherit; display: block; }
-    a.card:hover { transform: translateY(-4px); }
-    .card-img { height: 145px; background: #f5f7fa; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; }
-    .card-img img { width: 100%; height: 100%; object-fit: contain; }
-    .card-body { padding: 0.85rem 1rem 1rem; }
-    .card h3 { font-size: 0.92rem; margin-bottom: 0.2rem; line-height: 1.3; }
-    .card .desc { font-size: 0.76rem; color: #666; margin-bottom: 0.4rem; }
-    .price { font-size: 1.1rem; font-weight: 700; color: #e94560; }
-    .old-price { font-size: 0.78rem; color: #999; text-decoration: line-through; margin-right: 0.3rem; }
-    .cta { font-size: 0.72rem; color: #0f3460; margin-top: 0.35rem; font-weight: 600; }
-    .chat-box { background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 10px; padding: 1rem; margin: 1.5rem 0; text-align: center; }
-    .chat-box strong { color: #2e7d32; }
-    footer { background: #16213e; color: #bbb; text-align: center; padding: 1.8rem 1rem; margin-top: 2.5rem; font-size: 0.9rem; }
-    @media (max-width: 600px) {
-      header { flex-direction: column; gap: 0.5rem; }
-      nav a { margin: 0 0.4rem; }
-      .hero h1 { font-size: 1.6rem; }
-    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,sans-serif;background:#f4f4f4;color:#222;line-height:1.4}
+    header{background:#0f3460;color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+    .logo{font-weight:700;font-size:1.2rem}
+    .logo span{color:#e94560}
+    nav a{color:#ccc;text-decoration:none;margin-left:12px;font-size:.85rem}
+    .hero{background:#16213e;color:#fff;text-align:center;padding:28px 16px}
+    .hero h1{font-size:1.5rem;margin-bottom:6px}
+    .hero p{opacity:.85;font-size:.9rem}
+    .wrap{max-width:960px;margin:0 auto;padding:16px}
+    h2{font-size:1.15rem;margin:22px 0 12px;color:#0f3460;border-left:3px solid #e94560;padding-left:8px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+    a.card{background:#fff;border-radius:8px;padding:12px;text-decoration:none;color:inherit;box-shadow:0 1px 4px rgba(0,0,0,.08);display:block}
+    a.card:active{transform:scale(.98)}
+    .card h3{font-size:.88rem;margin-bottom:4px}
+    .card .desc{font-size:.75rem;color:#666;margin-bottom:6px}
+    .price{font-weight:700;color:#e94560;font-size:1rem}
+    .old{font-size:.75rem;color:#999;text-decoration:line-through;margin-right:4px}
+    .chat{background:#e8f5e9;border-radius:8px;padding:12px;text-align:center;margin:16px 0;font-size:.9rem}
+    footer{background:#16213e;color:#aaa;text-align:center;padding:20px 12px;margin-top:28px;font-size:.85rem}
   </style>
 </head>
 <body>
@@ -45,287 +33,128 @@
     <nav>
       <a href="#tv">TVs</a>
       <a href="#heladeras">Heladeras</a>
-      <a href="#lavarropas">Lavarropas</a>
-      <a href="#aires">Aires</a>
-      <a href="#cocina">Cocina</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#otros">Más</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Electrodomésticos en Monte Grande</h1>
-    <p>Precios actualizados · Consultá por chat</p>
-    <a href="#tv" class="btn">Ver productos</a>
+    <h1>Electrodomésticos Monte Grande</h1>
+    <p>Precios orientativos · Consultá por chat</p>
   </section>
 
-  <main class="container">
-
-    <div class="chat-box" id="contacto">
-      <strong>💬 Para consultar o reservar</strong><br>
-      Escribime un chat y te respondo con el precio final y la forma de entrega.
+  <div class="wrap">
+    <div class="chat" id="contacto">
+      <strong>💬 Escribime un chat</strong><br>
+      Te confirmo precio final y disponibilidad.
     </div>
 
     <h2 id="tv">Smart TVs</h2>
     <div class="grid">
-
       <a class="card" href="productos/noblex-32-roku.html">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=350&fit=crop&q=80" alt="Noblex 32"></div>
-        <div class="card-body">
-          <h3>Noblex 32" Roku HD</h3>
-          <p class="desc">DB32X3010</p>
-          <div class="price"><span class="old-price">$322.999</span> $264.655</div>
-          <div class="cta">Ver ficha →</div>
-        </div>
+        <h3>Noblex 32" Roku</h3>
+        <p class="desc">HD · DB32X3010</p>
+        <div class="price"><span class="old">$322.999</span>$264.655</div>
       </a>
-
-      <a class="card" href="productos/hisense-40.html">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=500&h=350&fit=crop&q=80" alt="Hisense 40"></div>
-        <div class="card-body">
-          <h3>Hisense 40" Full HD</h3>
-          <p class="desc">40A42K</p>
-          <div class="price"><span class="old-price">$434.999</span> $369.999</div>
-          <div class="cta">Ver ficha →</div>
-        </div>
-      </a>
-
-      <a class="card" href="productos/samsung-55-crystal.html">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=500&h=350&fit=crop&q=90" alt="Samsung 55"></div>
-        <div class="card-body">
-          <h3>Samsung 55" Crystal UHD</h3>
-          <p class="desc">U8000F · 4K</p>
-          <div class="price"><span class="old-price">$1.499.999</span> $817.709</div>
-          <div class="cta">Ver ficha →</div>
-        </div>
-      </a>
-
-      <a class="card" href="productos/noblex-43-roku.html">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=350&fit=crop&q=70" alt="Noblex 43"></div>
-        <div class="card-body">
-          <h3>Noblex 43" Roku FHD</h3>
-          <p class="desc">DB43X3110</p>
-          <div class="price"><span class="old-price">$699.999</span> $401.815</div>
-          <div class="cta">Ver ficha →</div>
-        </div>
-      </a>
-
-      <a class="card" href="productos/noblex-50-4k.html">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=350&fit=crop&q=60" alt="Noblex 50"></div>
-        <div class="card-body">
-          <h3>Noblex 50" Roku 4K</h3>
-          <p class="desc">4K UHD HDR</p>
-          <div class="price"><span class="old-price">$899.999</span> $666.697</div>
-          <div class="cta">Ver ficha →</div>
-        </div>
-      </a>
-
-      <a class="card" href="productos/tcl-75-qled.html">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500&h=350&fit=crop" alt="TCL 75"></div>
-        <div class="card-body">
-          <h3>TCL QLED 75"</h3>
-          <p class="desc">75P8K-F · Google TV</p>
-          <div class="price">$2.219.195</div>
-          <div class="cta">Ver ficha →</div>
-        </div>
-      </a>
-
-      <a class="card" href="productos/lg-65-oled.html">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500&h=350&fit=crop&q=80" alt="LG OLED"></div>
-        <div class="card-body">
-          <h3>LG 65" OLED C3</h3>
-          <p class="desc">OLED evo</p>
-          <div class="price"><span class="old-price">$3.835.000</span> $3.451.500</div>
-          <div class="cta">Ver ficha →</div>
-        </div>
-      </a>
-
       <a class="card" href="productos/enova-32.html">
-        <div class="card-img"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=350&fit=crop&q=50" alt="Enova 32"></div>
-        <div class="card-body">
-          <h3>Enova 32" Google TV</h3>
-          <p class="desc">TE32HG11</p>
-          <div class="price"><span class="old-price">$311.999</span> $259.999</div>
-          <div class="cta">Ver ficha →</div>
-        </div>
+        <h3>Enova 32" Google</h3>
+        <p class="desc">HD · TE32HG11</p>
+        <div class="price"><span class="old">$311.999</span>$259.999</div>
       </a>
-
+      <a class="card" href="productos/hisense-40.html">
+        <h3>Hisense 40"</h3>
+        <p class="desc">Full HD · 40A42K</p>
+        <div class="price"><span class="old">$434.999</span>$369.999</div>
+      </a>
+      <a class="card" href="productos/noblex-43-roku.html">
+        <h3>Noblex 43" Roku</h3>
+        <p class="desc">Full HD</p>
+        <div class="price"><span class="old">$699.999</span>$401.815</div>
+      </a>
+      <a class="card" href="productos/noblex-50-4k.html">
+        <h3>Noblex 50" 4K</h3>
+        <p class="desc">Roku · HDR</p>
+        <div class="price"><span class="old">$899.999</span>$666.697</div>
+      </a>
+      <a class="card" href="productos/samsung-55-crystal.html">
+        <h3>Samsung 55" Crystal</h3>
+        <p class="desc">4K · U8000F</p>
+        <div class="price"><span class="old">$1.499.999</span>$817.709</div>
+      </a>
+      <a class="card" href="productos/tcl-75-qled.html">
+        <h3>TCL 75" QLED</h3>
+        <p class="desc">4K · Google TV</p>
+        <div class="price">$2.219.195</div>
+      </a>
+      <a class="card" href="productos/lg-65-oled.html">
+        <h3>LG 65" OLED C3</h3>
+        <p class="desc">OLED evo</p>
+        <div class="price"><span class="old">$3.835.000</span>$3.451.500</div>
+      </a>
     </div>
 
-    <h2 id="heladeras">Heladeras y Freezers</h2>
+    <h2 id="heladeras">Heladeras</h2>
     <div class="grid">
       <a class="card" href="#contacto">
-        <div class="card-img" style="background:#e3f2fd">❄️</div>
-        <div class="card-body">
-          <h3>Philco No Frost 300L</h3>
-          <p class="desc">Inverter · Freezer superior</p>
-          <div class="price">$899.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
+        <h3>Philco 300L</h3>
+        <p class="desc">No Frost Inverter</p>
+        <div class="price">$899.999</div>
       </a>
       <a class="card" href="#contacto">
-        <div class="card-img" style="background:#e3f2fd">❄️</div>
-        <div class="card-body">
-          <h3>Drean 320L No Frost</h3>
-          <p class="desc">Inox · Motor inverter</p>
-          <div class="price">$872.399</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
+        <h3>Drean 320L</h3>
+        <p class="desc">No Frost Inox</p>
+        <div class="price">$872.399</div>
       </a>
       <a class="card" href="#contacto">
-        <div class="card-img" style="background:#e3f2fd">❄️</div>
-        <div class="card-body">
-          <h3>Hisense 466L</h3>
-          <p class="desc">No Frost · Dispenser</p>
-          <div class="price">$1.334.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
+        <h3>Hisense 466L</h3>
+        <p class="desc">Dispenser</p>
+        <div class="price">$1.334.999</div>
       </a>
       <a class="card" href="#contacto">
-        <div class="card-img" style="background:#e3f2fd">❄️</div>
-        <div class="card-body">
-          <h3>Samsung 328L Inverter</h3>
-          <p class="desc">No Frost digital</p>
-          <div class="price">$1.149.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
-      </a>
-      <a class="card" href="#contacto">
-        <div class="card-img" style="background:#e3f2fd">❄️</div>
-        <div class="card-body">
-          <h3>Gafa HGF357AFB</h3>
-          <p class="desc">Cíclica 280L</p>
-          <div class="price">$649.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
+        <h3>Samsung 328L</h3>
+        <p class="desc">Inverter</p>
+        <div class="price">$1.149.999</div>
       </a>
     </div>
 
-    <h2 id="lavarropas">Lavarropas y Secarropas</h2>
+    <h2 id="otros">Lavarropas · Aires · Cocina</h2>
     <div class="grid">
       <a class="card" href="#contacto">
-        <div class="card-img" style="background:#f3e5f5">🌀</div>
-        <div class="card-body">
-          <h3>Electrolux 7kg Inverter</h3>
-          <p class="desc">Carga frontal</p>
-          <div class="price">$699.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
+        <h3>Electrolux 7kg</h3>
+        <p class="desc">Inverter frontal</p>
+        <div class="price">$699.999</div>
       </a>
       <a class="card" href="#contacto">
-        <div class="card-img" style="background:#f3e5f5">🌀</div>
-        <div class="card-body">
-          <h3>Drean 6kg Inverter</h3>
-          <p class="desc">13 programas</p>
-          <div class="price">$649.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
+        <h3>Drean 6kg</h3>
+        <p class="desc">Inverter</p>
+        <div class="price">$649.999</div>
       </a>
       <a class="card" href="#contacto">
-        <div class="card-img" style="background:#f3e5f5">🌀</div>
-        <div class="card-body">
-          <h3>Philco 6,5kg</h3>
-          <p class="desc">Carga frontal</p>
-          <div class="price">$559.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
+        <h3>BGH 4730F</h3>
+        <p class="desc">Aire inverter</p>
+        <div class="price">$1.199.999</div>
       </a>
       <a class="card" href="#contacto">
-        <div class="card-img" style="background:#f3e5f5">🌀</div>
-        <div class="card-body">
-          <h3>Samsung 8kg Inverter</h3>
-          <p class="desc">Carga frontal · EcoBubble</p>
-          <div class="price">$849.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
+        <h3>Hitachi 3200W</h3>
+        <p class="desc">Frío/calor</p>
+        <div class="price">$699.999</div>
+      </a>
+      <a class="card" href="#contacto">
+        <h3>Cocina 4H</h3>
+        <p class="desc">Multigas</p>
+        <div class="price">$459.999</div>
+      </a>
+      <a class="card" href="#contacto">
+        <h3>Microondas 20L</h3>
+        <p class="desc">Digital</p>
+        <div class="price">$189.999</div>
       </a>
     </div>
-
-    <h2 id="aires">Aires Acondicionados</h2>
-    <div class="grid">
-      <a class="card" href="#contacto">
-        <div class="card-img" style="background:#e8f5e9">💨</div>
-        <div class="card-body">
-          <h3>BGH Inverter 4730F</h3>
-          <p class="desc">Frío/calor</p>
-          <div class="price">$1.199.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
-      </a>
-      <a class="card" href="#contacto">
-        <div class="card-img" style="background:#e8f5e9">💨</div>
-        <div class="card-body">
-          <h3>Hitachi 3200W</h3>
-          <p class="desc">Inverter frío/calor</p>
-          <div class="price">$699.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
-      </a>
-      <a class="card" href="#contacto">
-        <div class="card-img" style="background:#e8f5e9">💨</div>
-        <div class="card-body">
-          <h3>Philco 3750W</h3>
-          <p class="desc">Inverter Wi-Fi</p>
-          <div class="price">$779.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
-      </a>
-      <a class="card" href="#contacto">
-        <div class="card-img" style="background:#e8f5e9">💨</div>
-        <div class="card-body">
-          <h3>Samsung 3000W</h3>
-          <p class="desc">Inverter · Digital</p>
-          <div class="price">$899.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
-      </a>
-    </div>
-
-    <h2 id="cocina">Cocina y Microondas</h2>
-    <div class="grid">
-      <a class="card" href="#contacto">
-        <div class="card-img" style="background:#fff3e0">🍳</div>
-        <div class="card-body">
-          <h3>Cocina Multigas 4H</h3>
-          <p class="desc">Horno · Acero</p>
-          <div class="price">$459.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
-      </a>
-      <a class="card" href="#contacto">
-        <div class="card-img" style="background:#fff3e0">🍳</div>
-        <div class="card-body">
-          <h3>Anafe Eléctrico 4H</h3>
-          <p class="desc">Vitrocerámico</p>
-          <div class="price">$389.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
-      </a>
-      <a class="card" href="#contacto">
-        <div class="card-img" style="background:#fff3e0">📡</div>
-        <div class="card-body">
-          <h3>Microondas 20L</h3>
-          <p class="desc">Digital · Grill</p>
-          <div class="price">$189.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
-      </a>
-      <a class="card" href="#contacto">
-        <div class="card-img" style="background:#fff3e0">📡</div>
-        <div class="card-body">
-          <h3>Microondas 28L</h3>
-          <p class="desc">Con grill</p>
-          <div class="price">$249.999</div>
-          <div class="cta">Consultar por chat →</div>
-        </div>
-      </a>
-    </div>
-
-  </main>
+  </div>
 
   <footer>
     <p><strong>Electrónica Monte Grande</strong></p>
-    <p>Monte Grande, Buenos Aires</p>
-    <p style="margin-top:0.5rem">Precios orientativos de Mercado Libre · Agosto 2026</p>
-    <p style="margin-top:0.8rem;font-size:0.85rem">💬 Escribime un chat para consultar disponibilidad y precio final</p>
+    <p>Monte Grande · Buenos Aires</p>
+    <p style="margin-top:8px">💬 Escribime un chat para consultar</p>
   </footer>
 </body>
 </html>
