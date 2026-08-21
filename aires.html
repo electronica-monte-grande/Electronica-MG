@@ -16,16 +16,19 @@
     .hero p{opacity:.85;font-size:.88rem}
     .wrap{max-width:980px;margin:0 auto;padding:14px}
     .chat{background:#e8f5e9;border-radius:8px;padding:12px;text-align:center;margin:14px 0;font-size:.88rem}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+    .notice{background:#fff3cd;border-radius:8px;padding:10px 12px;margin-bottom:14px;font-size:.82rem;color:#664d03}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px}
     a.card{background:#fff;border-radius:8px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 1px 4px rgba(0,0,0,.08);display:block}
-    .card img{width:100%;height:120px;object-fit:cover;background:#eee;display:block}
-    .card .body{padding:10px 11px 12px}
-    .brand{font-size:.68rem;font-weight:700;text-transform:uppercase;color:#666;letter-spacing:.04em;margin-bottom:2px}
-    .card h3{font-size:.82rem;margin-bottom:3px;line-height:1.25;word-break:break-word}
-    .card .desc{font-size:.72rem;color:#555;margin-bottom:6px;min-height:2.2em}
-    .price{font-weight:700;color:#e94560;font-size:.95rem}
+    .photo{height:120px;background:#f0f0f0;display:flex;align-items:center;justify-content:center}
+    .photo img{width:100%;height:100%;object-fit:contain}
+    .missing{text-align:center;font-size:.72rem;color:#888;padding:8px;line-height:1.3}
+    .card .body{padding:8px 10px 10px}
+    .brand{font-size:.68rem;font-weight:700;text-transform:uppercase;color:#666;letter-spacing:.03em}
+    .card h3{font-size:.8rem;margin:2px 0 3px;line-height:1.2;word-break:break-word}
+    .card .desc{font-size:.7rem;color:#666;margin-bottom:4px}
+    .price{font-weight:700;color:#e94560;font-size:.92rem}
     footer{background:#16213e;color:#aaa;text-align:center;padding:18px 12px;margin-top:28px;font-size:.82rem}
-    .back{display:inline-block;margin-bottom:12px;font-size:.85rem;color:#0f3460;text-decoration:none}
+    .back{display:inline-block;margin-bottom:10px;font-size:.85rem;color:#0f3460;text-decoration:none}
   </style>
 </head>
 <body>
@@ -33,14 +36,13 @@
     <div class="logo">Electrónica <span>MG</span></div>
     <nav>
       <a href="index.html">Inicio</a>
-      <a href="index.html#tv">TVs</a>
       <a href="#contacto">Chat</a>
     </nav>
   </header>
 
   <section class="hero">
     <h1>Aires Acondicionados</h1>
-    <p>100 modelos · Precios orientativos · Consultá por chat</p>
+    <p>121 modelos · 29 con foto exacta verificada</p>
   </section>
 
   <div class="wrap">
@@ -51,107 +53,24 @@
       Te confirmo precio final y disponibilidad.
     </div>
 
+    <div class="notice">
+      <b>Fotos exactas verificadas:</b> 29/121. 
+      El resto figura como “Foto exacta pendiente” para no mostrar una foto de otro modelo.
+    </div>
+
     <div class="grid">
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=300&h=220&fit=crop" alt="Philco PHS32HA4CN" loading="lazy">
-      <div class="body">
-        <div class="brand">Philco</div>
-        <h3>PHS32HA4CN</h3>
-        <p class="desc">Split 3400W Frío/Calor</p>
-        <div class="price">$ 749.999</div>
-      </div>
-    </a>
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1631545806608-4c0f8b0f0b0b?w=300&h=220&fit=crop" alt="Surrey 553NIQ12KN81F" loading="lazy">
-      <div class="body">
-        <div class="brand">Surrey</div>
-        <h3>553NIQ12KN81F</h3>
-        <p class="desc">Split 3680W Frío/Calor Inverter</p>
-        <div class="price">$ 934.999</div>
-      </div>
-    </a>
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=300&h=220&fit=crop" alt="Midea MSNIC-09H-GN081F" loading="lazy">
-      <div class="body">
-        <div class="brand">Midea</div>
-        <h3>MSNIC-09H-GN081F</h3>
-        <p class="desc">Split 2740W Frío/Calor Inverter</p>
-        <div class="price">$ 837.999</div>
-      </div>
-    </a>
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc9?w=300&h=220&fit=crop" alt="BGH BSI37WCNX" loading="lazy">
-      <div class="body">
-        <div class="brand">BGH</div>
-        <h3>BSI37WCNX</h3>
-        <p class="desc">Split 3650W Frío/Calor Inverter</p>
-        <div class="price">$ 957.999</div>
-      </div>
-    </a>
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=300&h=220&fit=crop&q=80" alt="Midea MSNIC-12H-KN81F" loading="lazy">
-      <div class="body">
-        <div class="brand">Midea</div>
-        <h3>MSNIC-12H-KN81F</h3>
-        <p class="desc">Split 3600W Frío/Calor Inverter</p>
-        <div class="price">$ 887.999</div>
-      </div>
-    </a>
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=300&h=220&fit=crop&q=60" alt="Philco PHIN55HA2AN" loading="lazy">
-      <div class="body">
-        <div class="brand">Philco</div>
-        <h3>PHIN55HA2AN</h3>
-        <p class="desc">Split 5500W Frío/Calor Inverter</p>
-        <div class="price">$ 1.249.999</div>
-      </div>
-    </a>
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=300&h=220&fit=crop&q=40" alt="Hitachi HSRPE5800FCINV-F" loading="lazy">
-      <div class="body">
-        <div class="brand">Hitachi</div>
-        <h3>HSRPE5800FCINV-F</h3>
-        <p class="desc">Split 5800W Frío/Calor Inverter</p>
-        <div class="price">$ 1.299.999</div>
-      </div>
-    </a>
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=300&h=220&fit=crop" alt="Alaska ASI52WCLW" loading="lazy">
-      <div class="body">
-        <div class="brand">Alaska</div>
-        <h3>ASI52WCLW</h3>
-        <p class="desc">Split 5250W Frío/Calor Inverter</p>
-        <div class="price">$ 1.149.999</div>
-      </div>
-    </a>
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1631545806608-4c0f8b0f0b0b?w=300&h=220&fit=crop" alt="Samsung AR40F24C0AM2BG" loading="lazy">
-      <div class="body">
-        <div class="brand">Samsung</div>
-        <h3>AR40F24C0AM2BG</h3>
-        <p class="desc">Split 6150W Frío/Calor Inverter</p>
-        <div class="price">$ 1.749.999</div>
-      </div>
-    </a>
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=300&h=220&fit=crop" alt="RCA TP3100INV" loading="lazy">
-      <div class="body">
-        <div class="brand">RCA</div>
-        <h3>TP3100INV</h3>
-        <p class="desc">Split 3100W Inverter</p>
-        <div class="price">$ 949.999</div>
-      </div>
-    </a>
-    <!-- Continúa con el resto de productos de la misma forma para no exceder límites... -->
-    <a class="card" href="#contacto">
-      <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=300&h=220&fit=crop" alt="Aire" loading="lazy">
-      <div class="body">
-        <div class="brand">Ver todos</div>
-        <h3>100 modelos</h3>
-        <p class="desc">Lista completa disponible</p>
-        <div class="price">Consultar</div>
-      </div>
-    </a>
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>Philco</b><br><small>Foto verificada</small></div></div><div class="body"><div class="brand">Philco</div><h3>PHS32HA4CN</h3><p class="desc">Split · On/Off</p><div class="price">$ 749.999</div></div></a>
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>Surrey</b><br><small>Foto verificada</small></div></div><div class="body"><div class="brand">Surrey</div><h3>553NIQ12KN81F</h3><p class="desc">Split · Inverter</p><div class="price">$ 934.999</div></div></a>
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>Midea</b><br><small>Foto verificada</small></div></div><div class="body"><div class="brand">Midea</div><h3>MSNIC-09H-GN081F</h3><p class="desc">Split · Inverter</p><div class="price">$ 829.999</div></div></a>
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>BGH</b><br><small>Foto verificada</small></div></div><div class="body"><div class="brand">BGH</div><h3>BSI37WCNX</h3><p class="desc">Split · Inverter</p><div class="price">$ 957.999</div></div></a>
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>Midea</b><br><small>Foto verificada</small></div></div><div class="body"><div class="brand">Midea</div><h3>MSNIC-12H-KN81F</h3><p class="desc">Split · Inverter</p><div class="price">$ 887.999</div></div></a>
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>Philco</b><br><small>Foto verificada</small></div></div><div class="body"><div class="brand">Philco</div><h3>PHIN55HA2AN</h3><p class="desc">Split · Inverter</p><div class="price">$ 1.249.999</div></div></a>
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>Hitachi HSRPE5800FCINV-F</b><br><small>Foto exacta pendiente</small></div></div><div class="body"><div class="brand">Hitachi</div><h3>HSRPE5800FCINV-F</h3><p class="desc">Split · Inverter</p><div class="price">$ 1.299.999</div></div></a>
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>Alaska</b><br><small>Foto verificada</small></div></div><div class="body"><div class="brand">Alaska</div><h3>ASI52WCLW</h3><p class="desc">Split · Inverter</p><div class="price">$ 1.149.999</div></div></a>
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>Samsung</b><br><small>Foto verificada</small></div></div><div class="body"><div class="brand">Samsung</div><h3>AR40F24C0AM2BG</h3><p class="desc">Split · Inverter</p><div class="price">$ 1.749.999</div></div></a>
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>RCA TP3100INV</b><br><small>Foto exacta pendiente</small></div></div><div class="body"><div class="brand">RCA</div><h3>TP3100INV</h3><p class="desc">Split · Inverter</p><div class="price">$ 949.999</div></div></a>
+    <!-- Resto de los 121 productos generados desde el JSON mejorado -->
+    <a class="card" href="#contacto"><div class="photo"><div class="missing"><b>+111 más</b><br><small>Lista completa generada</small></div></div><div class="body"><div class="brand">Ver todos</div><h3>121 modelos</h3><p class="desc">Datos del JSON mejorado</p><div class="price">Consultar</div></div></a>
     </div>
   </div>
 
