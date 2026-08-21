@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aires Acondicionados · Electrónica Monte Grande</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,sans-serif;background:#f4f4f4;color:#222;line-height:1.4}
+    header{background:#0f3460;color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+    .logo{font-weight:700;font-size:1.15rem}
+    .logo span{color:#e94560}
+    nav a{color:#ccc;text-decoration:none;margin-left:10px;font-size:.82rem}
+    .hero{background:#16213e;color:#fff;text-align:center;padding:22px 14px}
+    .hero h1{font-size:1.35rem;margin-bottom:4px}
+    .hero p{opacity:.85;font-size:.88rem}
+    .wrap{max-width:980px;margin:0 auto;padding:14px}
+    .chat{background:#e8f5e9;border-radius:8px;padding:12px;text-align:center;margin:14px 0;font-size:.88rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+    a.card{background:#fff;border-radius:8px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 1px 4px rgba(0,0,0,.08);display:block}
+    .card .body{padding:10px 11px 12px}
+    .brand{font-size:.68rem;font-weight:700;text-transform:uppercase;color:#666;letter-spacing:.04em;margin-bottom:2px}
+    .card h3{font-size:.82rem;margin-bottom:3px;line-height:1.25;word-break:break-word}
+    .card .desc{font-size:.72rem;color:#555;margin-bottom:6px;min-height:2.2em}
+    .price{font-weight:700;color:#e94560;font-size:.95rem}
+    footer{background:#16213e;color:#aaa;text-align:center;padding:18px 12px;margin-top:28px;font-size:.82rem}
+    .back{display:inline-block;margin-bottom:12px;font-size:.85rem;color:#0f3460;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Electrónica <span>MG</span></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="index.html#tv">TVs</a>
+      <a href="#contacto">Chat</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Aires Acondicionados</h1>
+    <p>100 modelos · Precios orientativos · Consultá por chat</p>
+  </section>
+
+  <div class="wrap">
+    <a class="back" href="index.html">← Volver al catálogo</a>
+
+    <div class="chat" id="contacto">
+      <strong>💬 Escribime un chat</strong><br>
+      Te confirmo precio final y disponibilidad.
+    </div>
+
+    <div class="grid">
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Philco</div>
+        <h3>PHS32HA4CN</h3>
+        <p class="desc">Split 3400W Frío/Calor</p>
+        <div class="price">$ 749.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Surrey</div>
+        <h3>553NIQ12KN81F</h3>
+        <p class="desc">Split 3680W Frío/Calor Inverter</p>
+        <div class="price">$ 934.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Midea</div>
+        <h3>MSNIC-09H-GN081F</h3>
+        <p class="desc">Split 2740W Frío/Calor Inverter</p>
+        <div class="price">$ 837.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BSI37WCNX</h3>
+        <p class="desc">Split 3650W Frío/Calor Inverter</p>
+        <div class="price">$ 957.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Midea</div>
+        <h3>MSNIC-12H-KN81F</h3>
+        <p class="desc">Split 3600W Frío/Calor Inverter</p>
+        <div class="price">$ 887.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Philco</div>
+        <h3>PHIN55HA2AN</h3>
+        <p class="desc">Split 5500W Frío/Calor Inverter</p>
+        <div class="price">$ 1.249.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hitachi</div>
+        <h3>HSRPE5800FCINV-F</h3>
+        <p class="desc">Split 5800W Frío/Calor Inverter</p>
+        <div class="price">$ 1.299.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Alaska</div>
+        <h3>ASI52WCLW</h3>
+        <p class="desc">Split 5250W Frío/Calor Inverter</p>
+        <div class="price">$ 1.149.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Samsung</div>
+        <h3>AR40F24C0AM2BG</h3>
+        <p class="desc">Split 6150W Frío/Calor Inverter</p>
+        <div class="price">$ 1.749.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">RCA</div>
+        <h3>TP3100INV</h3>
+        <p class="desc">Split 3100W Inverter</p>
+        <div class="price">$ 949.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hitachi</div>
+        <h3>HSPE3300FCINV</h3>
+        <p class="desc">Split 3200W Frío/Calor Inverter</p>
+        <div class="price">$ 799.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">LG</div>
+        <h3>S4-W24K231</h3>
+        <p class="desc">Split 6450W Dual Inverter Wi‑Fi</p>
+        <div class="price">$ 2.249.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">RCA</div>
+        <h3>RCA5700INV</h3>
+        <p class="desc">Split 5700W Inverter R32 Smart IA</p>
+        <div class="price">$ 1.299.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hyundai</div>
+        <h3>HY11INV3200FCW</h3>
+        <p class="desc">Split 3200W Frío/Calor Inverter</p>
+        <div class="price">$ 809.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Electra</div>
+        <h3>ETI26C</h3>
+        <p class="desc">Split 2600W Frío/Calor Inverter</p>
+        <div class="price">$ 759.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA3100FCSA/TPRO2</h3>
+        <p class="desc">Split 3100W Frío/Calor Inverter</p>
+        <div class="price">$ 919.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Surrey</div>
+        <h3>553NIQ22GN81F</h3>
+        <p class="desc">Split 6500W Frío/Calor Inverter</p>
+        <div class="price">$ 1.747.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">RCA</div>
+        <h3>RCA6400INV</h3>
+        <p class="desc">Split 6400W Inverter R32 Smart IA</p>
+        <div class="price">$ 1.376.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">RCA</div>
+        <h3>RCA3400INV</h3>
+        <p class="desc">Split 3400W Inverter</p>
+        <div class="price">$ 849.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">RCA</div>
+        <h3>RP3200FC</h3>
+        <p class="desc">Split 3200W Frío/Calor</p>
+        <div class="price">$ 729.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">RCA</div>
+        <h3>REL3300FC</h3>
+        <p class="desc">Split 3300W Frío/Calor</p>
+        <div class="price">$ 729.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">RCA</div>
+        <h3>RP2600FC</h3>
+        <p class="desc">Split 2600W Frío/Calor</p>
+        <div class="price">$ 739.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">RCA</div>
+        <h3>RL3350FC-F-SK</h3>
+        <p class="desc">Split 3350W Frío/Calor</p>
+        <div class="price">$ 706.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA-3350FCSD/EL5</h3>
+        <p class="desc">Split 3350W Frío/Calor</p>
+        <div class="price">$ 744.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA3400FCSA/TPRO</h3>
+        <p class="desc">Split 3400W Frío/Calor Inverter</p>
+        <div class="price">$ 884.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA-3400FCSD/EL4</h3>
+        <p class="desc">Split 3400W Frío/Calor</p>
+        <div class="price">$ 749.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA-2600FCSA/EL2</h3>
+        <p class="desc">Split 2600W Frío/Calor</p>
+        <div class="price">$ 699.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA5700FCSD/TPROINV</h3>
+        <p class="desc">Split 5700W Frío/Calor Inverter</p>
+        <div class="price">$ 1.216.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA3700FCSD/BREEZE</h3>
+        <p class="desc">Split 3700W Frío/Calor Inverter</p>
+        <div class="price">$ 852.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Philco</div>
+        <h3>PHIN37HA2AN</h3>
+        <p class="desc">Split 3750W Frío/Calor Inverter</p>
+        <div class="price">$ 892.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Philco</div>
+        <h3>PHS25HA4CN</h3>
+        <p class="desc">Split 2500W Frío/Calor</p>
+        <div class="price">$ 729.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Philco</div>
+        <h3>PHW32CA3AN</h3>
+        <p class="desc">Ventana 3300W Frío</p>
+        <div class="price">$ 899.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Philco</div>
+        <h3>SPLIT5200INV</h3>
+        <p class="desc">Split 5200W Inverter Frío/Calor</p>
+        <div class="price">$ 1.489.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Philco</div>
+        <h3>PHW25CA3AN</h3>
+        <p class="desc">Ventana 2500W Frío</p>
+        <div class="price">$ 814.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Philco</div>
+        <h3>PHW50CA3AN</h3>
+        <p class="desc">Ventana 5100W Frío</p>
+        <div class="price">$ 1.132.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Midea</div>
+        <h3>MCVE12RE22F1</h3>
+        <p class="desc">Ventana 3400W Frío</p>
+        <div class="price">$ 849.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Midea</div>
+        <h3>MVF12CFN81F</h3>
+        <p class="desc">Ventana 3400W Frío</p>
+        <div class="price">$ 899.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Midea</div>
+        <h3>MCVE18RE22F1</h3>
+        <p class="desc">Ventana 5160W Frío</p>
+        <div class="price">$ 1.399.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Midea</div>
+        <h3>MVF09CFN81F</h3>
+        <p class="desc">Ventana 2550W Frío</p>
+        <div class="price">$ 849.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Midea</div>
+        <h3>MVF18CFN81F</h3>
+        <p class="desc">Ventana 5250W Frío</p>
+        <div class="price">$ 1.299.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BC35WFAW</h3>
+        <p class="desc">Ventana 3450W Frío</p>
+        <div class="price">$ 919.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hisense</div>
+        <h3>AS12HR4SVRKG03PX4</h3>
+        <p class="desc">Split 3400W Frío/Calor</p>
+        <div class="price">$ 729.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hitachi</div>
+        <h3>HSP3200FCECO</h3>
+        <p class="desc">Split 3200W Frío/Calor</p>
+        <div class="price">$ 779.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">LG</div>
+        <h3>W24K2RPE</h3>
+        <p class="desc">Split ArtCool Dual Inverter 6450W</p>
+        <div class="price">$ 2.659.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TCC-72ZHRA</h3>
+        <p class="desc">Split 16120W / 18000F Frío/Calor Inverter</p>
+        <div class="price">$ 4.799.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BSI55WCNX</h3>
+        <p class="desc">Split 4700F Frío/Calor Inverter</p>
+        <div class="price">$ 1.599.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Philco</div>
+        <h3>PHPTINH6TRHC5N</h3>
+        <p class="desc">Piso Techo 18000F Frío/Calor Inverter</p>
+        <div class="price">$ 5.344.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BS35WCHU</h3>
+        <p class="desc">Split 3200W Frío/Calor</p>
+        <div class="price">$ 799.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BSH52WCU</h3>
+        <p class="desc">Split 5000W Frío/Calor</p>
+        <div class="price">$ 1.169.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BS54WCDW</h3>
+        <p class="desc">Split 5400W Frío/Calor</p>
+        <div class="price">$ 1.159.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BS35WCKW</h3>
+        <p class="desc">Split 3300W Frío/Calor</p>
+        <div class="price">$ 789.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BC26WFAW</h3>
+        <p class="desc">Ventana 2560W Frío</p>
+        <div class="price">$ 709.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BS35WCDW</h3>
+        <p class="desc">Split 3600W Frío/Calor</p>
+        <div class="price">$ 789.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BS52WCEW</h3>
+        <p class="desc">Split 5250W Frío/Calor</p>
+        <div class="price">$ 1.159.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BSI35WCKW</h3>
+        <p class="desc">Split 3500W Frío/Calor Inverter</p>
+        <div class="price">$ 909.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BC52WFAW</h3>
+        <p class="desc">Ventana 5200W Frío</p>
+        <div class="price">$ 1.439.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Philco</div>
+        <h3>PHS80HC4BN</h3>
+        <p class="desc">Split 8000W Frío/Calor</p>
+        <div class="price">$ 1.889.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA-2650FCSD/EL4</h3>
+        <p class="desc">Split 2650W Frío/Calor</p>
+        <div class="price">$ 669.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA-5400FCSD/EL4</h3>
+        <p class="desc">Split 5400W Frío/Calor</p>
+        <div class="price">$ 1.049.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hisense</div>
+        <h3>AS18HR4SXSKG00PX4N</h3>
+        <p class="desc">Split 5200W Frío/Calor</p>
+        <div class="price">$ 1.229.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hisense</div>
+        <h3>AS09HR4SYRKG00N</h3>
+        <p class="desc">Split 2750W Frío/Calor</p>
+        <div class="price">$ 824.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hisense</div>
+        <h3>AS12UR4SVRCD02N</h3>
+        <p class="desc">Split 3300W Frío/Calor Inverter</p>
+        <div class="price">$ 939.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">LG</div>
+        <h3>S4-W24K2RPE</h3>
+        <p class="desc">ArtCool Inverter 6448W Frío/Calor</p>
+        <div class="price">$ 2.989.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">LG</div>
+        <h3>S4-W18KL31A</h3>
+        <p class="desc">Dual Cool Inverter 5200W Wi‑Fi</p>
+        <div class="price">$ 1.765.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">LG</div>
+        <h3>S4-W12JA31A</h3>
+        <p class="desc">Dual Cool Inverter 3600W Wi‑Fi</p>
+        <div class="price">$ 1.319.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">LG</div>
+        <h3>S4-W24K231E</h3>
+        <p class="desc">Dual Cool Inverter 6450W Wi‑Fi</p>
+        <div class="price">$ 2.557.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">LG</div>
+        <h3>S4-W</h3>
+        <p class="desc">ArtCool Inverter 3600W Frío/Calor</p>
+        <div class="price">$ 1.599.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">LG</div>
+        <h3>S4-W18KLRPA</h3>
+        <p class="desc">ArtCool Inverter 5200W Wi‑Fi</p>
+        <div class="price">$ 2.309.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hauser</div>
+        <h3>A016</h3>
+        <p class="desc">Portátil 2600W Frío/Calor</p>
+        <div class="price">$ 589.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hauser</div>
+        <h3>NPN-12H</h3>
+        <p class="desc">Portátil 3500W Frío/Calor</p>
+        <div class="price">$ 599.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Surrey</div>
+        <h3>553NFQ12GN81F</h3>
+        <p class="desc">Split 3610W Frío/Calor</p>
+        <div class="price">$ 709.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Surrey</div>
+        <h3>553GFQ0901F</h3>
+        <p class="desc">Split 2730W Frío/Calor</p>
+        <div class="price">$ 759.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Surrey</div>
+        <h3>553NFQ18GN81F</h3>
+        <p class="desc">Split 5350W Frío/Calor</p>
+        <div class="price">$ 1.399.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BSI65WCLW</h3>
+        <p class="desc">Split Inverter 6500W Frío/Calor R32</p>
+        <div class="price">$ 1.699.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA-6500FCSD</h3>
+        <p class="desc">Split 6500W Frío/Calor On/Off</p>
+        <div class="price">$ 1.259.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA5700FCSD-AI</h3>
+        <p class="desc">Split 5700W Inverter AI Frío/Calor R32</p>
+        <div class="price">$ 1.099.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA6400FCSD-AI</h3>
+        <p class="desc">Split 6400W Inverter AI Frío/Calor R32</p>
+        <div class="price">$ 1.364.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BSI67WCNX</h3>
+        <p class="desc">Split Inverter 6700W Frío/Calor</p>
+        <div class="price">$ 1.699.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Surrey</div>
+        <h3>553NIQ18GN81F</h3>
+        <p class="desc">Split Inverter 5350W Frío/Calor</p>
+        <div class="price">$ 1.299.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA-8500FCSD</h3>
+        <p class="desc">Split 8500W Inverter Frío/Calor R32</p>
+        <div class="price">$ 2.439.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA-3400FC-INV</h3>
+        <p class="desc">Split 3400W Inverter Frío/Calor</p>
+        <div class="price">$ 699.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>TACA-10500FCSD</h3>
+        <p class="desc">Split 10500W Inverter Frío/Calor R32</p>
+        <div class="price">$ 2.529.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Admiral</div>
+        <h3>AD09AGINV</h3>
+        <p class="desc">Inverter 2300F / 2700W</p>
+        <div class="price">$ 599.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Electra</div>
+        <h3>ENTRDO26TC</h3>
+        <p class="desc">Split Frío/Calor 2236F</p>
+        <div class="price">$ 530.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Kanji</div>
+        <h3>PORTATIL2900</h3>
+        <p class="desc">Portátil Frío/Calor 2900W</p>
+        <div class="price">$ 529.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">eNova</div>
+        <h3>AES09IX10</h3>
+        <p class="desc">Split Inverter 2931W / 2520F Frío/Calor</p>
+        <div class="price">$ 599.990</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">BGH</div>
+        <h3>BS26WCCR</h3>
+        <p class="desc">Split Frío/Calor 2700W</p>
+        <div class="price">$ 433.345</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Sansei</div>
+        <h3>SAP26HC9AN</h3>
+        <p class="desc">Portátil Frío/Calor</p>
+        <div class="price">$ 549.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Kelvinator</div>
+        <h3>KEL2650LT</h3>
+        <p class="desc">Split 2650W Frío/Calor</p>
+        <div class="price">$ 534.990</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Surrey</div>
+        <h3>551PXQ12N81F</h3>
+        <p class="desc">Portátil Frío/Calor 3010F</p>
+        <div class="price">$ 469.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Kelvinator</div>
+        <h3>KAP12HR</h3>
+        <p class="desc">Portátil 3200W Frío/Calor</p>
+        <div class="price">$ 859.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Samsung</div>
+        <h3>AR40F18</h3>
+        <p class="desc">Split Inverter 4500F Frío/Calor</p>
+        <div class="price">$ 1.247.419</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Samsung</div>
+        <h3>AR40F12C0AM2BG</h3>
+        <p class="desc">Split Inverter 3000W Frío/Calor</p>
+        <div class="price">$ 775.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Samsung</div>
+        <h3>AR24BSHQAWK</h3>
+        <p class="desc">Split Inverter 5031F Frío/Calor</p>
+        <div class="price">$ 1.864.265</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Samsung</div>
+        <h3>AR12BSHQAWK2BG</h3>
+        <p class="desc">Split Digital Inverter 3260W Frío/Calor</p>
+        <div class="price">$ 1.560.917</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hisense</div>
+        <h3>AS18UR4SXSCA00B</h3>
+        <p class="desc">Split Inverter 5500W Frío/Calor negro</p>
+        <div class="price">$ 1.465.150</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hisense</div>
+        <h3>AS18UR4SXSCD00PX4E</h3>
+        <p class="desc">Split Inverter 5500W Frío/Calor blanco</p>
+        <div class="price">$ 1.300.348</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Hisense</div>
+        <h3>AS22HR4SXTKG00N</h3>
+        <p class="desc">Split 6300W Frío/Calor</p>
+        <div class="price">Consultar</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">TCL</div>
+        <h3>PORTATIL3000F</h3>
+        <p class="desc">Portátil Frío/Calor 3000F</p>
+        <div class="price">$ 599.999</div>
+      </div>
+    </a>
+    <a class="card" href="#contacto">
+      <div class="body">
+        <div class="brand">Surrey</div>
+        <h3>551IDQ1201F</h3>
+        <p class="desc">Portátil 3500W Frío/Calor</p>
+        <div class="price">$ 799.999</div>
+      </div>
+    </a>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Electrónica Monte Grande</strong></p>
+    <p>Monte Grande · Buenos Aires</p>
+    <p style="margin-top:6px">💬 Escribime un chat para consultar</p>
+  </footer>
+</body>
+</html>
